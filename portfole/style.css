@@ -49,7 +49,7 @@ button:hover, form .btn-enviar input:hover{
 /* ESTILO DO CABEÇALHO */
 
 header{
-    padding: 40px 4px;
+    padding: 40px 6%;
 }
 header > .interface{
     display: flex;
