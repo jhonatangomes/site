@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilos/style.css">
+    <title>Carros</title>
+</head>
+<body>
+    <div class="container" id="page">
+    <header>
+      <div class="nav" role="navigation" aria-label="Menu principal">
+        <div class="brand">
+          <img src="imagens/download (1).png" alt="Logotipo da concessionária">
+          <div>
+            <h1>Concessionária XYZ</h1>
+            <div style="font-size:12px; color:rgba(255,255,255,0.85)">Carros e utilitários — Qualidade e confiança</div>
+          </div>
+        </div>
+
+        <nav>
+          <button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button>
+          <ul id="mainNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="carros.html">Carros</a></li>
+            <li><a href="aluguel.html">Aluguel</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a class="login" href="login.html">Login</a></li>
+            <li><a class="cta" href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a><br>
+        <a href="carros.html">Carros</a><br>
+        <a href="aluguel.html">Aluguel</a><br>
+        <a href="sobre.html">Sobre</a><br>
+        <a href="login.html">Login</a><br>
+        <a class="cta" href="contato.html">Contato</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO + CAROUSEL -->
+      <section class="hero">
+        <div class="hero-card">
+          <h2>Toyota Hilux — 2025</h2>
+          <p>Robustez, conforto e tecnologia. Conheça as versões disponíveis e aproveite nossas condições especiais.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="location.href='carros.html'">Ver Modelos</button>
+            <button class="btn btn-ghost" onclick="location.href='contato.html'">Agende um Test Drive</button>
+          </div>
+        </div>
+
+        <div class="carousel" aria-roledescription="carousel" aria-label="Modelos em destaque">
+          <div class="slides" id="slides">
+            <!-- Slide 1 -->
+            <div class="slide" data-index="0" aria-hidden="false">
+              <img src="imagens/toyota_hilux_2021_1_24062021_48497_1280_960.jpg" alt="Toyota Hilux lateral">
+              <div class="info">
+                <h2>Toyota Hilux 2.8 Turbo Diesel</h2>
+                <p>Potência, torque e tração 4x4 para qualquer terreno. Conforto e itens de segurança de série.</p>
+                <div style="margin-top:12px">
+                  <span class="price">R$ 289.900*</span>
+                </div>
+                <div style="margin-top:14px">
+                  <button class="btn btn-primary" onclick="location.href='carros.html'">Comprar Agora</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide" data-index="1" aria-hidden="true">
+              <img src="imagens/11-1080x675.jpg" alt="Hilux na estrada">
+              <div class="info">
+                <h2>Versão aventureira</h2>
+                <p>Design e equipamentos voltados para aventura e conforto, com tecnologia embarcada.</p>
+                <div style="margin-top:12px">
+                  <span class="price">R$ 309.900*</span>
+                </div>
+                <div style="margin-top:14px">
+                  <button class="btn btn-primary" onclick="location.href='carros.html'">Ver Detalhes</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 (repita quando necessário) -->
+            <div class="slide" data-index="2" aria-hidden="true">
+              <img src="imagens/toyota_hilux_2021_1_24062021_48497_1280_960.jpg" alt="Hilux em cidade">
+              <div class="info">
+                <h2>Conforto e segurança</h2>
+                <p>Pacote completo de segurança ativa e passiva com tecnologia para família e trabalho.</p>
+                <div style="margin-top:12px">
+                  <span class="price">Consulte valor</span>
+                </div>
+                <div style="margin-top:14px">
+                  <button class="btn btn-primary" onclick="location.href='contato.html'">Simular Financiamento</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="btn-prev" id="prev" aria-label="Slide anterior">‹</button>
+            <button class="btn-next" id="next" aria-label="Próximo slide">›</button>
+          </div>
+
+          <div class="indicators" id="dots" role="tablist" aria-label="Indicadores do carrossel"></div>
+        </div>
+      </section>
+
+      <!-- GRID DE MODELOS -->
+      <section>
+        <h2 style="text-align:center; margin:18px 0 12px 0">Modelos Hilux — 2025</h2>
+
+        <div class="grid" id="modelsGrid">
+          <!-- Card 1 -->
+          <article class="card" role="article">
+            <div class="media">
+              <img src="imagens/toyota_hilux_2021_1_24062021_48497_1280_960.jpg" alt="Hilux - versão 1">
+            </div>
+            <div class="content">
+              <h3>Hilux SRX</h3>
+              <p>Motor 2.8 Turbo Diesel, câmbio automático e acabamento premium. Ideal para estrada e cidade.</p>
+              <div class="price">A partir de R$ 289.900</div>
+              <div style="display:flex; gap:8px;">
+                <button class="btn btn-primary" onclick="location.href='carros.html'">Comprar</button>
+                <button class="btn btn-ghost" onclick="location.href='contato.html'">Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card" role="article">
+            <div class="media">
+              <img src="imagens/11-1080x675.jpg" alt="Hilux - versão 2">
+            </div>
+            <div class="content">
+              <h3>Hilux Off-Road</h3>
+              <p>Suspensão reforçada, tração 4x4 e pacote off-road. Perfeita para aventuras.</p>
+              <div class="price">Consulte</div>
+              <div style="display:flex; gap:8px;">
+                <button class="btn btn-primary" onclick="location.href='carros.html'">Solicitar</button>
+                <button class="btn btn-ghost" onclick="location.href='contato.html'">Agendar visita</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card" role="article">
+            <div class="media">
+              <img src="imagens/toyota_hilux_2021_1_24062021_48497_1280_960.jpg" alt="Hilux - versão 3">
+            </div>
+            <div class="content">
+              <h3>Hilux Executive</h3>
+              <p>Acabamento superior, sistema multimídia avançado e assistências de condução.</p>
+              <div class="price">Sob consulta</div>
+              <div style="display:flex; gap:8px;">
+                <button class="btn btn-primary" onclick="location.href='carros.html'">Ver</button>
+                <button class="btn btn-ghost" onclick="location.href='contato.html'">Financiamento</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      <div class="left">
+        <strong>Concessionária XYZ</strong>
+        <small>Rua Exemplo, 123 — Centro • Cidade • Estado</small>
+        <small>Telefone: (00) 9 0000-0000</small>
+      </div>
+      <div class="right">
+        <a href="sobre.html">Sobre nós</a>
+        <a href="privacidade.html">Política de privacidade</a>
+        <small>© <span id="year"></span> Concessionária XYZ. Todos os direitos reservados.</small>
+      </div>
+    </footer>
+  </div>
+
+
+     <script>
+    // Mobile nav toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger?.addEventListener('click', ()=>{
+      mobileNav.classList.toggle('open');
+    });
+
+    // Simple Carousel logic with autoplay, controls, indicators and touch
+    (function(){
+      const slidesEl = document.getElementById('slides');
+      const slides = Array.from(slidesEl.querySelectorAll('.slide'));
+      const prevBtn = document.getElementById('prev');
+      const nextBtn = document.getElementById('next');
+      const dotsEl = document.getElementById('dots');
+      let current = 0;
+      let autoplayInterval = 4500;
+      let autoplayTimer = null;
+      let isHover = false;
+
+      // create dots
+      slides.forEach((s,i)=>{
+        const d = document.createElement('button');
+        d.className = 'dot' + (i===0?' active':'');
+        d.setAttribute('aria-label','Ir para slide ' + (i+1));
+        d.addEventListener('click', ()=> goTo(i));
+        dotsEl.appendChild(d);
+      });
+
+      const dots = Array.from(dotsEl.children);
+
+      function update(){
+        slidesEl.style.transform = `translateX(-${current * 100}%)`;
+        slides.forEach((s,i)=> s.setAttribute('aria-hidden', i===current ? 'false' : 'true'));
+        dots.forEach((d,i)=> d.classList.toggle('active', i===current));
+      }
+
+      function goTo(idx){
+        current = (idx + slides.length) % slides.length;
+        update();
+        resetAutoplay();
+      }
+      function next(){ goTo(current+1) }
+      function prev(){ goTo(current-1) }
+
+      nextBtn?.addEventListener('click', next);
+      prevBtn?.addEventListener('click', prev);
+
+      // autoplay
+      function startAutoplay(){
+        stopAutoplay();
+        autoplayTimer = setInterval(()=> { if(!isHover) next(); }, autoplayInterval);
+      }
+      function stopAutoplay(){ if(autoplayTimer) clearInterval(autoplayTimer); autoplayTimer = null; }
+      function resetAutoplay(){ startAutoplay(); }
+
+      // pause on hover/focus
+      const carousel = document.querySelector('.carousel');
+      carousel?.addEventListener('mouseenter', ()=> isHover = true);
+      carousel?.addEventListener('mouseleave', ()=> isHover = false);
+      carousel?.addEventListener('focusin', ()=> isHover = true);
+      carousel?.addEventListener('focusout', ()=> isHover = false);
+
+      // touch support
+      let startX = 0;
+      slidesEl.addEventListener('touchstart', (e)=> { startX = e.touches[0].clientX; });
+      slidesEl.addEventListener('touchend', (e)=> {
+        const dx = e.changedTouches[0].clientX - startX;
+        if(Math.abs(dx) > 40){
+          if(dx < 0) next(); else prev();
+        }
+      });
+
+      // init
+      update();
+      startAutoplay();
+
+      // expose for debug (optional)
+      window._carousel = { goTo, next, prev };
+    })();
+
+    // Set dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
